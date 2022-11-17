@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+
+        }
+        .nav{
+            height: 90px;
+            background-color: #A7515B;
+            border: 1px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0px;
+            box-shadow: 8px 8px 10px black;
+
+        }
+        h2{
+            margin: 20px;
+            align-items: center;
+            font-size: 40px;
+            color: white;
+            text-shadow: 4px 6px 8px black;
+        }
+        .nav-ele{
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+            margin-right: 25px;
+        }
+        p{
+            font-family: sans-serif;
+
+        }
+        .form-control{
+            padding: 15px;
+            
+        }
+        .choose{
+            margin-left: 90px;
+        }
+        h4{
+            font-size: 40px;
+            font-weight: 800;
+            color: white;
+            text-shadow: 4px 8px 10px black;
+        }
+        #preview{
+            height: 300px;
+            margin-top: 5px;
+            margin-left: 70px;
+            width: 400px;
+
+        }
+        input{
+            text-decoration: none;
+            font-size: 20px;
+            color: aliceblue;
+        }
+        body{
+            background-image: url("isorepublic-fruit-background-1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h3{
+            font-size: 30px;
+            color: white;
+            text-shadow: 4px 6px 8px black;
+        }
+    </style>
+    <script src="image.js" ></script>
+</head>
+<body>
+    <div class="nav">
+        <h2>Nutrition-Image Analysis</h2>
+        <div class="nav-ele">
+            <h3>Home</h3>
+            <h3>Classify</h3>
+        </div>
+    </div>
+    <div class="choose">
+        <h4>Image upload to Classify</h4>
+        <input type="file" name="upload_file" class="form-control" id="upload_file" onchange="getImagePreview(event)">
+    </div>
+    <div id="preview"></div>
+</body>
+</html>
